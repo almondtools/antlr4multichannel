@@ -61,7 +61,6 @@ public class MultiChannelTokenStream extends BufferedTokenStream {
 		int i = p;
 		for (int  n = 1; n <= k; n++) {
 			i = previousTokenOnChannel(i - 1, channels);
-			n++;
 		}
 		if (i < 0) {
 			return null;
